@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-primary;
+}
+
+.heading-2 {
+  font-family: $font-secondary;
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+
+.heading-3 {
+  font-family: $font-secondary;
+  font-size: 2rem;
+  font-weight: 900;
+  color: $dark-blue;
+  margin-bottom: 3rem;
+}

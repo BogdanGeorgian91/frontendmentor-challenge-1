@@ -1,0 +1,57 @@
+.testimonials {
+  padding-top: 9rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 5rem;
+
+  h3 {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 6rem;
+    color: $grayish-blue;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: $font-secondary;
+    letter-spacing: 0.5rem;
+  }
+
+  &__img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+
+  &__card {
+    flex-basis: 27%;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__text {
+    color: $dark-grayish-blue2;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  &__person {
+    font-family: $font-secondary;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  &__position {
+    margin-top: -2rem;
+    color: $dark-grayish-blue1;
+    font-family: $font-secondary;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}

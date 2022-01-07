@@ -1,0 +1,5 @@
+// @import "_header.scss";
+
+@media screen and (max-width: 920px) {
+  @include burger-menu();
+}

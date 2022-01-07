@@ -1,0 +1,92 @@
+.showcase {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__item {
+    position: relative;
+
+    &-1,
+    &-4 {
+      height: 60rem;
+    }
+
+    &-2 {
+      background-image: url("/images/desktop/image-transform.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &-3 {
+      background-image: url("/images/desktop/image-stand-out.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &-5 {
+      background-image: url("/images/desktop/image-graphic-design.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 60rem;
+    }
+
+    &-6 {
+      background-image: url("/images/desktop/image-photography.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 60rem;
+    }
+  }
+
+  &__container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    color: $dark-grayish-blue2;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+
+    &-center {
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 900;
+    cursor: pointer;
+    border-bottom: 0.6rem solid transparent;
+
+    &--yellow:hover {
+      border-bottom: 0.6rem solid $yellow; //problem: adauga inaltimii
+    }
+    &--red:hover {
+      border-bottom: 0.6rem solid $soft-red; //problem: adauga inaltimii
+    }
+  }
+}
